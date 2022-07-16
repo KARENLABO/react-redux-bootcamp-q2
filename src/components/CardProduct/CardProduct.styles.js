@@ -2,35 +2,43 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: calc(30% - 16px) calc(30% - 16px) calc(30% - 16px) ;
-  grid-template-rows: auto;
+  grid-template-columns: calc(30% - 10px) calc(30% - 10px) calc(30% - 10px)  ;
+  grid-auto-rows: max-content;
   gap: 35px;
   justify-content:center;
   align-items:center;
   font-weight: bold;
-  margin: 7rem 1rem 2rem 1rem;
-  color:#73777B;
+  margin: 1rem 1rem 1rem 1rem;
+  color:#464241;
+  width: 100wv;
+  heigth: 100hv;
+  font-family: 'Inter', sans-serif;
   
   .principal-image-product{
     max-width: 200px;
     max-height: 160px;
   }
-
+  
+  .add-to-shopping-card{
+    color:white;
+  }
+  
   .product-name{
     text-align:center;
     justify-self:center;
-    width: 85%;
+    width: 70%;
+    margin-top: 1rem;
     font-size: 1rem;
-    
   }
 
   .product-category{
     margin-top:1rem;
-    color: #40394A;
+    color: #5690F4;
+    font-weight:bold;
   }
 
   .product-price{
-    color: #FF4949; 
+    color: #E9694E;
   }
 
   .container-button-add-to-cart{
@@ -40,16 +48,18 @@ export const Wrapper = styled.div`
 
   .card-products{
     display:grid;
-    grid-template-rows: 3.5fr 1fr repeat(3, 1fr);
-    max-height: 400px;
+    grid-auto-rows: auto;
+    max-height: 100%;
+    max-width: 350px;
     justify-content: center;
     text-align:center;
+    background-color: white;
 
-    p{
-      margin:0;
-      padding:0;
-    }
-
+      p{
+        margin:0;
+        padding:0;
+      }
+      
     .container-image-product{
       max-width: 100%;
       background-color: white;
@@ -57,22 +67,23 @@ export const Wrapper = styled.div`
       justify-content: center;
       text-align:center;
       align-items:center;
-      width:150%
     }
 
-
     .button-add-to-cart{
-      border-color: rgb(150, 95, 239);
+      display:flex;
+      flex-direction: row;
+      justify-content:center;
+      align-items:center;
+      gap: 1rem;
       background-color: #764AF1;
       color: white;
-      width:calc(100% - 16px);
-      font-size: 1.2rem;
-      font-family: 'Montserrat', sans-serif;
+      width:100%;
+      font-size: 1rem;
       height: 50px;
+      margin-top:2px;
     }
   
   }
-
   @media only screen and (max-width: 600px) {
     flex-direction: column;
     margin-top: 180px;
