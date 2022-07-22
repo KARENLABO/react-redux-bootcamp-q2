@@ -10,6 +10,8 @@ export const Wrapper = styled.div`
   font-weight: bold;
   margin: 7rem 1rem 2rem 1rem;
   color:#73777B;
+  width: 100wv;
+  heigth: 100hv;
   
   .principal-image-product{
     max-width: 200px;
@@ -67,7 +69,8 @@ export const Wrapper = styled.div`
       color: white;
       width:calc(100% - 16px);
       font-size: 1.2rem;
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Roboto","Helvetica","Arial",sans-serif;
+
       height: 50px;
     }
   
